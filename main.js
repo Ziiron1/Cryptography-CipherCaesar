@@ -5,6 +5,7 @@ const radiobtn = document.querySelector(".radio-button");
 const codificar = document.querySelector("#codificar");
 const decodificar = document.querySelector("#decodificar");
 
+
 /* Alterar o texto  */
 const cipher = document.querySelectorAll("#cipher-all")
 /* const tittle1 = document.querySelector("#cipher-title");
@@ -69,9 +70,9 @@ function cifraCesar() {
 // Botão
 radiobtn.addEventListener("click", function () {
     if (codificar.checked) {
-        bttn.innerHTML = "Codificar Mensagem!";
+        btt.innerHTML = "Codificar Mensagem!";
     } else if (decodificar.checked) {
-        bttn.innerHTML = "Decodificar Mensagem!";
+        btt.innerHTML = "Decodificar Mensagem!";
     }
 });
 
@@ -83,3 +84,16 @@ btn.addEventListener("click", function (event) {
         resultado.innerText = cifraCesar();
     }
 });
+
+/* COLOCAR UM TRANSITION NO CSS PARA FAZER UMA COISA BONITINHA QUANDO CLICAR NO BOTAO
+*/
+
+/* MUDAR TEXTO */
+
+function changetextbase64() {
+    document.getElementById("alltext").innerHTML = '<h1> Como começou a base64?  </h1 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni corrupti, recusandae ullam ducimus dolore laudantium, commodi aspernatur non aliquid ex accusamus voluptatibus sequi laboriosam! Necessitatibus voluptates soluta earum nisi quisquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni corrupti, recusandae ullam ducimus dolore laudantium, commodi aspernatur non aliquid ex accusamus voluptatibus sequi laboriosam! Necessitatibus voluptates soluta earum nisi quisquam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni corrupti, recusandae ullam ducimus dolore laudantium, commodi aspernatur non aliquid ex accusamus voluptatibus sequi laboriosam! Necessitatibus voluptates soluta earum nisi quisquam!</p> <h2> Como funciona? </h2> <br> <h2> Para enviar <span> mensagem </span> codificada </h2> <p> Antes de tudo, vá no campo "Selecione" e escolha utilizar Cifra de César <br> Logo após, selecione sua chave ( 1 a 26). E seleciona .codificar e no campo de texto escreva a sua senha ou o que voce quer criptografar. </p>';
+}
+
+function changetextcifra() {
+    document.getElementById("alltext").innerHTML = '<h1> AAAAAAAAA TENHO QUE DIGITAR ISSO TUDO </h1>'
+}
