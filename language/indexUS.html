@@ -9,27 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Alike+Angular&family=Inconsolata:wght@400;600&display=swap"
         rel="stylesheet" />
-    <link rel="shortcut icon" href="./assets/favicon lock.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicon lock.svg" type="image/x-icon">
 
     <!-- Code "forked" from https://github.com/ellenmariadev/codificador and updated by https://github.com/Ziiron1/Cryptography-CipherCaesar  -->
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styleUS.css" />
+    <script src="/language/mainUS.js" defer></script>
 
-    <title>Decodificador</title>
+    <title>Decodefier</title>
 </head>
 
 <body>
 
     <nav>
         <p id="language">
-            < Idioma >
+            < Language>
         </p>
-        <a href="index.html">
-            <img src="./assets/Brazil icon.svg" alt="Brazil icon">
+        <a href="/index.html">
+            <img src="/assets/Brazil icon.svg" alt="Brazil icon">
         </a>
-        <a href="/language/indexUS.html">
-            <img src="./assets/Eua icon.svg" alt="Eua icon">
+        <a href="indexUS.html">
+            <img src="/assets/Eua icon.svg" alt="Eua icon">
         </a>
     </nav>
 
@@ -38,7 +38,7 @@
         <div id="cipher-all" class="text-main">
             <div id="btn-text">
                 <button onclick="changetextcifra()">
-                    <span>Cifra de César</span>
+                    <span>Caesar Cipher</span>
                     <i></i>
                 </button>
                 <button onclick="changetextbase64()">
@@ -47,40 +47,34 @@
                 </button>
             </div>
             <div id="alltext">
-                <h1 id="cipher-title">História da <span id="dec"> Cifra de César </span></h1>
-                <p id="cipher-text1">Júlio César, era um imperador romano de 100 a.C. a 44 a.C., ele não só criou como
-                    utilizava um <span> código </span> para
-                    proteger as mensagens enviadas a seus generais. Assim, se a mensagem caísse em mãos inimigas, a
-                    informação
-                    não poderia ser compreendida por eles. Cada letra do <span> alfabeto </span> era substituída pela
-                    letra três
-                    posições
-                    à frente, ou seja, o “A” era substituído pelo “D”, o “B” pelo “E”, o “C” pelo “F”, e assim
-                    sucessivamente.
-                    Qualquer código que tenha esse padrão é considerado uma Cifra de César, também conhecida como Código
-                    de César.
+                <h1 id="cipher-title"> <span id="dec">Caesar Cipher </span> History</h1>
+                <p id="cipher-text1">Júlio César, was a Roman Emperor from 100 BC. to 44 BC, he did not just create the
+                    code, but
+                    he used to use a <span> code </span> to protect messages sent to his generals.
+                    Then, if the message fell into enemy hands, the information could not be understood by them. Each
+                    letter of <span> alphabet </span> was replaced by the letter three positions
+                    forward, that is, the “A” was replaced by the “D”, the “B” by the “E”, the “C” by the “F”, and so on
+                    successively.
+                    Any code that has this pattern is considered a Caesar Cipher, also known as a Code
+                    of Caesar.
                 </p>
                 <br>
-                <h2 id="cipher-title2">Como funciona?
-                    <br> Para enviar mensagem
-                    <span id="dec"> codificada</span>
+                <h2 id="cipher-title2">How it works?
+                    <br> To send message
+                    <span id="dec"> encoded </span>
                 </h2>
                 <p id="cipher-text2">
-                    Antes de tudo, vá no campo " <span>Selecione </span> " e escolha utilizar Cifra de César
-                    <br> Logo após, selecione sua chave ( 1 a 26). E seleciona .codificar e no campo de texto escreva a
-                    sua senha
-                    ou o que voce quer criptografar.
-                    <br> Logo após clicar no botão "<span>Codificar Mensagem!</span> " A sua mensagem Criptografada
-                    aparecerá no
-                    campo de
-                    texto "Mensagem Criptografada"
+                    First of all, go to the field " <span>Select </span> " and choose to use Caesar Cipher
+                    <br> After that, select your key (1 to 26).And select <span>.encode</span> and in the text field
+                    write the
+                    your password or what you want to encrypt.
+                    <br> Right after clicking the button "<span>Encode Message!</span>" Your Encrypted Message will
+                    appear in field of text "Encrypted Message"
                 </p>
-                <h2 id="cipher-title3">Para ler uma mensagem <span id="dec">codificada </span></h2>
+                <h2 id="cipher-title3">To read an <span id="dec">encoded </span> message</h2>
                 <p>
-                    Insira a mensagem cifrada no campo "<span>Digite sua mensagem... </span> " e no campo "chave" o
-                    número informado
-                    pelo seu remetente para
-                    decodificar a cifra.
+                    Enter the encrypted message in the field "<span>Enter your message... </span> " and in the "key"
+                    field the informed number by your sender to decode the cipher.
                 </p>
             </div>
         </div>
@@ -90,21 +84,21 @@
             <div class="container">
                 <h1>
                     <span>
-                        < / </span>Criptografia<span> > </span>
+                        < / </span>Criptography<span> > </span>
                 </h1>
-                <h3> Cifra de César e Base64</h3>
+                <h3> Caesar Cipher and Base64</h3>
                 <form action="#">
                     <textarea name="mensagem" id="mensagem" cols="50" rows="4"
-                        placeholder="Digite sua mensagem..."></textarea>
+                        placeholder="Enter your message..."></textarea>
 
                     <label id="selecione" for="select"></label>
                     <select name="select" class="select" id="select">
-                        <option value="selecione" disabled selected>Selecione</option>
+                        <option value="selecione" disabled selected>Select</option>
                         <option value="base64">Base64</option>
-                        <option value="cifra">Cifra de césar</option>
+                        <option value="cifra">Caesar Cipher</option>
                     </select>
                     <div class="chave-container">
-                        <label class="chave" for="range">Escolha a Chave</label>
+                        <label class="chave" for="range">Choose your Key</label>
                         <div class="slider-range">
                             <input type="range" value="1" min="1" max="26" class="range" id="range"
                                 oninput="rangenumber.value=value" />
@@ -116,19 +110,19 @@
                     <div class="radio-button">
                         <div class="radio">
                             <input type="radio" name="codificar" id="codificar" value="codificar" checked />
-                            <label for="codificar">.codificar</label>
+                            <label for="codificar">.encode</label>
                         </div>
 
                         <div class="radio">
                             <input type="radio" name="codificar" id="decodificar" value="decodificar" />
-                            <label for="decodificar">.decodificar</label>
+                            <label for="decodificar">.decode</label>
                         </div>
                     </div>
 
                     <textarea id="resultado" class="mensagem resultado" cols="50" rows="4" readonly
-                        placeholder="Mensagem Criptografada"></textarea>
+                        placeholder="Encrypted Message"></textarea>
                     <div class="bttn">
-                        <button id="btt">Codificar Mensagem!</button>
+                        <button id="btt">Encode Message!</button>
                     </div>
                 </form>
                 <div class="social">
@@ -151,7 +145,7 @@
         </div>
     </main>
     <footer>
-        <p> <span> Quase todos os direitos reservados por Ziiron1  < / 3 </span> </p>
+        <p> <span> Almost all rights reserved by Ziiron1 < / 3 </span> </p>
     </footer>
 </body>
 

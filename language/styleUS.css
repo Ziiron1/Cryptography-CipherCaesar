@@ -25,9 +25,9 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    height: 100%;
-    border: solid rgba(4, 9, 27, 0.09) 3px;
-    border-style:inset;
+    height: 100vh;
+    border: solid rgba(38, 38, 38, 0.1) 1px;
+    border-style: groove;
 }
 
 label {
