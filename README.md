@@ -1,9 +1,7 @@
-# Caesar Cipher and Base64 Project
-
-🔒 Criptografia de texto com Base64 e Cifra de César utilizando JavaScript. 🔒
+Criptografia de texto com Base64 e Cifra de César utilizando JavaScript. 🔒
 
 
-![Captura de tela 2022-10-03 163645](https://user-images.githubusercontent.com/106287961/193663869-0e0e34b3-3ebf-4d0a-8db4-2b222cb66829.jpg)
+![imagem_2022-10-03_165220597](https://user-images.githubusercontent.com/106287961/193666521-ce55b352-f2de-4fad-866d-fd69ff17c7c4.png)
 
 Linguagens usadas
 
